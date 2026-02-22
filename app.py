@@ -66,5 +66,5 @@ async def health(request):
     return html("OK", status=200)
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
+    port = int(os.environ.get("PORT", 8080))
     app.run(host="0.0.0.0", port=port, single_process=True)
